@@ -3,8 +3,9 @@
  * Plugin Name: Minn Legacy Pack
  * Plugin URI: https://minn.run
  * Description: WordPress's own browser scripts and styles for a site running Minn, so the editors of page builders such as Elementor open without WordPress. On WordPress itself it does nothing.
- * Version: 7.1.3
+ * Version: 7.1.3.1
  * Requires PHP: 8.1
+ * Update URI: https://github.com/austinginder/minn-legacy-pack
  * Author: Austin Ginder
  * License: MIT AND GPL-2.0-or-later
  * License URI: https://github.com/austinginder/minn-legacy-pack#licence

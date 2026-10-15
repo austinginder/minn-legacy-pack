@@ -52,8 +52,15 @@ these files.
 
 The version is the WordPress release the files come from (7.1.3). A release of the plugin's own
 code on the same files adds a fourth number (7.1.3.1). Tags are `v<version>`, and each release on
-GitHub carries `minn-legacy-pack.zip` (`bin/release.sh`). Minn offers updates to it through
-updates.minn.run.
+GitHub carries `minn-legacy-pack.zip` (`bin/release.sh`). The plugin's `Update URI` names this
+repository, so Minn offers its updates through updates.minn.run, which follows its releases, and
+WordPress never looks for it on wordpress.org.
+
+## Installing it
+
+Minn offers it: where a site runs an editor known to need it (Elementor's today) and the pack is
+not active, Minn Admin's Plugins tab and the editor's links offer to install it from the Minn update
+service. It can also be installed like any plugin from its release zip.
 
 ## Building it from a WordPress release
 
