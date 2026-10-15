@@ -58,16 +58,20 @@ WordPress never looks for it on wordpress.org.
 
 ## Installing it
 
-Minn offers it: where a site runs an editor known to need it (Elementor's today) and the pack is
-not active, Minn Admin's Plugins tab and the editor's links offer to install it from the Minn update
-service. It can also be installed like any plugin from its release zip.
+Minn offers it. Where a site runs an editor known to need it (Elementor, Brizy, Beaver Builder,
+Bricks) and the pack is not active, the editor's links and Minn Admin's Plugins tab offer to install
+it from the Minn update service. Where Minn sees a plugin's scripts on the site's public pages
+needing WordPress's (WooCommerce's variation form and block cart do), Minn Admin's Overview says so
+and offers it too. It can also be installed like any plugin from its release zip.
 
 ## Building it from a WordPress release
 
 ```bash
 # 1. Capture the registry inside a WordPress install of that release, no plugins or theme loaded.
 wp --path=/path/to/wordpress eval-file bin/capture.php --skip-plugins --skip-themes --user=1 > build/registry.json
-# 2. Copy the files and write the manifest.
+# 2. Capture the media window's words and templates (writes media/).
+wp --path=/path/to/wordpress eval-file bin/capture-media.php --skip-plugins --skip-themes --user=1
+# 3. Copy the files and write the manifest.
 php bin/build.php /path/to/wordpress build/registry.json
 ```
 
