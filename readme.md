@@ -50,8 +50,8 @@ these files.
 
 ## Versions
 
-The version is the WordPress release the files come from (7.1.3). A release of the plugin's own
-code on the same files adds a fourth number (7.1.3.1). Tags are `v<version>`, and each release on
+The version is the WordPress release the files come from (7.1.4). A release of the plugin's own
+code on the same files adds a fourth number (7.1.4.1). Tags are `v<version>`, and each release on
 GitHub carries `minn-legacy-pack.zip` (`bin/release.sh`). The plugin's `Update URI` names this
 repository, so Minn offers its updates through updates.minn.run, which follows its releases, and
 WordPress never looks for it on wordpress.org.
